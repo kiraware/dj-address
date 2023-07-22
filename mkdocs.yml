@@ -1,18 +1,20 @@
 site_name: Dj Address
+site_description: Django Address Field
 site_url: https://kiraware.github.io/dj-address
 repo_url: https://github.com/kiraware/dj-address
 repo_name: kiraware/dj-address
 #strict: true
 nav:
-  - Home: index.md
-  - Installation: installation.md
-  - Usage: usage.md
-  - Modules: api.md
-  - Contributing: contributing.md
-  - Changelog: changelog.md
+  - Home: "index.md"
+  - Installation: "installation.md"
+  - Usage: "usage.md"
+  - Modules: "api.md"
+  - Contributing: "contributing.md"
+  - Changelog: "changelog.md"
+  - "Issue Tracker": "https://github.com/kiraware/dj-address/issues"
 theme:
   name: material
-  language: en
+  locale: en
   #logo: assets/logo.png
   palette:
     scheme: preference
@@ -56,14 +58,6 @@ watch:
   - dj_address
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      # replace with your own tweet link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
-      name: Tweet
-    - icon: fontawesome/brands/facebook
-      # replace with your own facebook link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
-      name: Facebook
     - icon: fontawesome/brands/github
       link: https://github.com/kiraware/dj-address
       name: Github
