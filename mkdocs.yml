@@ -40,18 +40,20 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.details
   - admonition
-  - toc:
+  - markdown.extensions.toc:
       baselevel: 2
       permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+          percent_encode: true
   - meta
 plugins:
   - include-markdown
   - search:
       lang: en
-  - mkdocstrings:
-      watch:
-        - dj-address
+watch:
+  - dj_address
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -71,5 +73,5 @@ extra:
   # disqus: disqus_id
 # uncomment the following and put your google tracking id below to enable GA
 #google_analytics:
-  #- UA-xxx
-  #- auto
+#  - UA-xxx
+#  - auto
